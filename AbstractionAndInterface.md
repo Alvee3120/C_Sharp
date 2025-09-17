@@ -125,6 +125,46 @@ Bike Stoped
 ```
 
 
+Interface Extend Interface 
+
+```cs
+using System;
+
+interface IMachine1
+{
+    void Start();
+}
+
+interface IMachine2
+{
+    void Move();
+}
+interface IAdvancedMachine : IMachine1, IMachine2
+{
+    void Stop();
+    
+}
+
+class Robot : IAdvancedMachine
+{
+    public void Start() => Console.WriteLine("Robot started.");
+
+    public void Move() => Console.WriteLine("Robot Moving");
+    public void Stop() => Console.WriteLine("Robot stopped.");
+}
+
+class Program
+{
+    static void Main()
+    {
+        Robot r = new Robot();
+        r.Start();
+        r.Move();
+        r.Stop();
+    }
+}
+```
+
 # Main Difference Between Abstract and Interface
 
 # Difference Between Abstract Class and Interface in C#
