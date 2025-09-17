@@ -165,6 +165,13 @@ class Program
 }
 ```
 
+Output: 
+```bash
+Robot started.
+Robot Moving
+Robot stopped.
+```
+
 # Main Difference Between Abstract and Interface
 
 # Difference Between Abstract Class and Interface in C#
